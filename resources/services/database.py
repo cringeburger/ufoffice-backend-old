@@ -2,10 +2,9 @@ import asyncpg
 import os
 from typing import Optional
 from asyncpg.connection import Connection
-from boto.s3.connection import S3Connection
 
 
-database_url = S3Connection(os.environ['DATABASE_URL'])
+database_url = os.environ['DATABASE_URL']
 
 class DB:
     conn: Connection = None
