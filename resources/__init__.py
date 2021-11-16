@@ -10,4 +10,3 @@ CORS(app)
 # Custom modules
 import resources.routes
 import resources.services
-from resources.settings import host

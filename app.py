@@ -1,5 +1,5 @@
 from flask import Flask
-from resources import app, host
+from resources import app
 
 
 if __name__ == "__main__":
