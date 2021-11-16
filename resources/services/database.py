@@ -4,7 +4,7 @@ from typing import Optional
 from asyncpg.connection import Connection
 
 
-database_url = os.environ['DATABASE_URL']
+database_url = os.environ['DATABASE_URL_2']
 
 class DB:
     conn: Connection = None
