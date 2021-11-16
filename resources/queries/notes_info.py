@@ -1,5 +1,6 @@
 from resources import DB
 from resources.services import json_serializable
+import json
 
 
 #
@@ -33,7 +34,7 @@ async def user_notes(user_id, quantity):
         result.add_features('body', str(item['note_body']))
         result.new_features_tuple()
 
-    return str(result.data[:-1])
+    return json.dumps(result.data[:-1], indent=2)
 
 
 #
