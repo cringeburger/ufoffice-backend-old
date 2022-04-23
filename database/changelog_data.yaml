@@ -1,0 +1,540 @@
+databaseChangeLog:
+- changeSet:
+    id: 1650717602206-1
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: achievement_group_id
+            name: achievement_group_id
+            type: NUMERIC
+        - column:
+            header: achievement_group_name
+            name: achievement_group_name
+            type: STRING
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/achievement_groups.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: achievement_groups
+- changeSet:
+    id: 1650717602206-2
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: note_id
+            name: note_id
+            type: NUMERIC
+        - column:
+            header: note_header
+            name: note_header
+            type: STRING
+        - column:
+            header: note_body
+            name: note_body
+            type: STRING
+        - column:
+            header: user_id
+            name: user_id
+            type: NUMERIC
+        - column:
+            header: created_dttm
+            name: created_dttm
+            type: DATE
+        - column:
+            header: updated_dttm
+            name: updated_dttm
+            type: DATE
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/notes.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: notes
+- changeSet:
+    id: 1650717602206-3
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: org_prt_id
+            name: org_prt_id
+            type: NUMERIC
+        - column:
+            header: user_id
+            name: user_id
+            type: NUMERIC
+        - column:
+            header: org_id
+            name: org_id
+            type: NUMERIC
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/org_participants.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: org_participants
+- changeSet:
+    id: 1650717602206-4
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: organization_team_id
+            name: organization_team_id
+            type: NUMERIC
+        - column:
+            header: org_id
+            name: org_id
+            type: NUMERIC
+        - column:
+            header: team_id
+            name: team_id
+            type: NUMERIC
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/organization_teams.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: organization_teams
+- changeSet:
+    id: 1650717602206-5
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: org_id
+            name: org_id
+            type: NUMERIC
+        - column:
+            header: org_type_id
+            name: org_type_id
+            type: NUMERIC
+        - column:
+            header: org_name
+            name: org_name
+            type: STRING
+        - column:
+            header: legal_entity
+            name: legal_entity
+            type: STRING
+        - column:
+            header: org_desc
+            name: org_desc
+            type: STRING
+        - column:
+            header: org_image
+            name: org_image
+            type: skip
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/organizations.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: organizations
+- changeSet:
+    id: 1650717602206-6
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: org_type_id
+            name: org_type_id
+            type: NUMERIC
+        - column:
+            header: org_type_name
+            name: org_type_name
+            type: STRING
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/orgatization_type.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: orgatization_type
+- changeSet:
+    id: 1650717602206-7
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: profession_id
+            name: profession_id
+            type: NUMERIC
+        - column:
+            header: profession_name
+            name: profession_name
+            type: STRING
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/professions.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: professions
+- changeSet:
+    id: 1650717602206-8
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: skill_group_id
+            name: skill_group_id
+            type: NUMERIC
+        - column:
+            header: skill_group_name
+            name: skill_group_name
+            type: STRING
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/skill_groups.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: skill_groups
+- changeSet:
+    id: 1650717602206-9
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: skill_id
+            name: skill_id
+            type: NUMERIC
+        - column:
+            header: skill_group_id
+            name: skill_group_id
+            type: NUMERIC
+        - column:
+            header: skill_name
+            name: skill_name
+            type: STRING
+        - column:
+            header: skill_img
+            name: skill_img
+            type: STRING
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/skills.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: skills
+- changeSet:
+    id: 1650717602206-10
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: task_status_name_id
+            name: task_status_name_id
+            type: NUMERIC
+        - column:
+            header: task_status_name
+            name: task_status_name
+            type: STRING
+        - column:
+            header: task_status_sysname
+            name: task_status_sysname
+            type: STRING
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/task_status_name.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: task_status_name
+- changeSet:
+    id: 1650717602206-11
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: task_status_id
+            name: task_status_id
+            type: NUMERIC
+        - column:
+            header: task_status_name_id
+            name: task_status_name_id
+            type: NUMERIC
+        - column:
+            header: task_id
+            name: task_id
+            type: NUMERIC
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/task_status.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: task_status
+- changeSet:
+    id: 1650717602206-12
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: task_id
+            name: task_id
+            type: NUMERIC
+        - column:
+            header: task_name
+            name: task_name
+            type: STRING
+        - column:
+            header: create_dttm
+            name: create_dttm
+            type: DATE
+        - column:
+            header: last_upd_dttm
+            name: last_upd_dttm
+            type: DATE
+        - column:
+            header: task_desc
+            name: task_desc
+            type: STRING
+        - column:
+            header: end_dt
+            name: end_dt
+            type: DATE
+        - column:
+            header: ach_pts
+            name: ach_pts
+            type: NUMERIC
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/tasks.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: tasks
+- changeSet:
+    id: 1650717602206-13
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: team_prt_id
+            name: team_prt_id
+            type: NUMERIC
+        - column:
+            header: user_id
+            name: user_id
+            type: NUMERIC
+        - column:
+            header: team_id
+            name: team_id
+            type: NUMERIC
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/team_participants.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: team_participants
+- changeSet:
+    id: 1650717602206-14
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: team_id
+            name: team_id
+            type: NUMERIC
+        - column:
+            header: org_id
+            name: org_id
+            type: NUMERIC
+        - column:
+            header: team_name
+            name: team_name
+            type: STRING
+        - column:
+            header: team_desc
+            name: team_desc
+            type: STRING
+        - column:
+            header: team_image
+            name: team_image
+            type: skip
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/teams.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: teams
+- changeSet:
+    id: 1650717602206-15
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: user_role_id
+            name: user_role_id
+            type: NUMERIC
+        - column:
+            header: user_role_name
+            name: user_role_name
+            type: STRING
+        - column:
+            header: user_role_sysname
+            name: user_role_sysname
+            type: STRING
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/user_roles.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: user_roles
+- changeSet:
+    id: 1650717602206-16
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: user_skill_id
+            name: user_skill_id
+            type: NUMERIC
+        - column:
+            header: user_id
+            name: user_id
+            type: NUMERIC
+        - column:
+            header: skill_id
+            name: skill_id
+            type: NUMERIC
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/user_skills.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: user_skills
+- changeSet:
+    id: 1650717602206-17
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: user_task_id
+            name: user_task_id
+            type: NUMERIC
+        - column:
+            header: user_id
+            name: user_id
+            type: NUMERIC
+        - column:
+            header: task_id
+            name: task_id
+            type: NUMERIC
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/user_tasks.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: user_tasks
+- changeSet:
+    id: 1650717602206-18
+    author: ichetverikov (generated)
+    changes:
+    - loadData:
+        columns:
+        - column:
+            header: user_id
+            name: user_id
+            type: NUMERIC
+        - column:
+            header: username
+            name: username
+            type: STRING
+        - column:
+            header: user_sex
+            name: user_sex
+            type: STRING
+        - column:
+            header: user_birthday
+            name: user_birthday
+            type: DATE
+        - column:
+            header: user_password
+            name: user_password
+            type: STRING
+        - column:
+            header: user_fio
+            name: user_fio
+            type: STRING
+        - column:
+            header: user_mail
+            name: user_mail
+            type: STRING
+        - column:
+            header: user_vk
+            name: user_vk
+            type: STRING
+        - column:
+            header: user_tg
+            name: user_tg
+            type: STRING
+        - column:
+            header: user_facebook
+            name: user_facebook
+            type: STRING
+        - column:
+            header: user_role_id
+            name: user_role_id
+            type: NUMERIC
+        - column:
+            header: user_rating
+            name: user_rating
+            type: NUMERIC
+        - column:
+            header: user_image
+            name: user_image
+            type: STRING
+        - column:
+            header: user_status
+            name: user_status
+            type: STRING
+        - column:
+            header: profession_id
+            name: profession_id
+            type: NUMERIC
+        - column:
+            header: user_phone
+            name: user_phone
+            type: STRING
+        commentLineStartsWith: '#'
+        encoding: UTF-8
+        file: data/users.csv
+        quotchar: '"'
+        schemaName: ufoffice
+        separator: ','
+        tableName: users
+

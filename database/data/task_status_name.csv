@@ -1,0 +1,4 @@
+"task_status_name_id","task_status_name","task_status_sysname"
+"1","В работе","active"
+"2","Выполнено","inactive"
+"3","Просрочено","stillactive"
